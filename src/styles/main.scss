@@ -1,0 +1,100 @@
+/**
+ * Created by yikun on 16/05/04.
+ */
+
+body {
+    background: #fff;
+}
+
+header {
+    text-align: center;
+}
+
+.text-danger {
+    color: red;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+
+.btn:focus {
+    outline: none;
+}
+
+.container {
+    width: 600px;
+    margin-top: 30px;
+
+    .todo-wrap {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+
+        .todo-header{
+            input {
+                width: 97%;
+                height: 28px;
+            }
+        }
+
+        .todo-main {
+
+            margin-left: 0px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+
+            li {
+                list-style: none;
+                height: 36px;
+                line-height: 36px;
+                padding: 0 5px;
+                border-bottom: 1px solid #ddd;
+                input[type="checkbox"] {
+                    position: relative;
+                    bottom: -8px;
+                    float: left;
+                    margin-right: 6px;
+                }
+                button {
+                    float: right;
+                    display: none;
+                    margin-top: 3px;
+                }
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+
+        }
+
+        .todo-empty {
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            padding-left: 5px;
+        }
+
+        .todo-footer {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 6px;
+            margin-top: 5px;
+            label {
+                display: inline-block;
+                margin-right: 20px;
+                input {
+                    vertical-align: top;
+                    margin-right: 4px;
+                }
+            }
+            button {
+                float: right;
+                margin-top: 5px;
+            }
+        }
+
+    }
+}

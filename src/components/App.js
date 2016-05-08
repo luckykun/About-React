@@ -104,7 +104,7 @@ class App extends React.Component { //定义组件，继承父类
 
 
 
-React.render(<App/>, document.getElementById('todo-app'));
+React.render(<App/>, document.getElementById('app'));
 
 
 

@@ -83,11 +83,13 @@ header {
                 line-height: 36px;
                 padding: 0 5px;
                 border-bottom: 1px solid #ddd;
-                input[type="checkbox"] {
-                    position: relative;
-                    bottom: -10px;
+                label {
                     float: left;
-                    margin-right: 6px;
+                    cursor: pointer;
+                    input {
+                        vertical-align: middle;
+                        margin-right: 6px;
+                    }
                 }
                 button {
                     float: right;
@@ -96,7 +98,7 @@ header {
                 }
             }
             li:before {
-                content: inherit;
+                content: initial;
             }
             li:last-child {
                 border-bottom: none;

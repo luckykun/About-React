@@ -39,8 +39,10 @@ class TodoItem extends React.Component {
         let className = this.props.isDone ? 'task-done' : '';
         return (
             <li onMouseOver={this.handlerMouseOver.bind(this)} onMouseOut={this.handlerMouseOut.bind(this)}>
+                <label>
                 <input type="checkbox" checked={this.props.isDone} onChange={this.handlerChange.bind(this)} />
                 <span className={className}>{this.props.text}</span>
+                </label>
                 <button ref="delButton" className="btn btn-danger" onClick={this.handlerDelete.bind(this)}>删除</button>
             </li>
         )

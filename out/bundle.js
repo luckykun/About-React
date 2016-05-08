@@ -538,7 +538,7 @@
 	    return App;
 	})(_react2['default'].Component);
 
-	_react2['default'].render(_react2['default'].createElement(App, null), document.getElementById('todo-app'));
+	_react2['default'].render(_react2['default'].createElement(App, null), document.getElementById('app'));
 
 	// var Hello = React.createClass({
 	//     render: function() {

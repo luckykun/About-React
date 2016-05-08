@@ -95,6 +95,9 @@ header {
                     margin-top: 3px;
                 }
             }
+            li:before {
+                content: inherit;
+            }
             li:last-child {
                 border-bottom: none;
             }
@@ -121,7 +124,8 @@ header {
                 cursor: pointer;
                 input {
                     position: relative;
-                    top: -2px;
+                    top: -1px;
+                    vertical-align: middle;
                     margin-right: 5px;
                 }
             }

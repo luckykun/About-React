@@ -1,5 +1,5 @@
 # 使用说明
-此项目直接下载下来即可运行，不需要安装任何插件。如果想看demo，[戳这里](http://luckykun.com/work/2016-05-08/react-todo.html)
+此项目直接下载下来即可运行，不需要安装任何插件。[实例demo之React-Todos戳这里](http://luckykun.com/work/2016-05-08/react-todo-demo.html)
 
 
 

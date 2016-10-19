@@ -18,13 +18,12 @@ class App extends React.Component { //定义组件，继承父类
         super(); //调用父类的构造函数
         this.db = new LocalDb('ReactDemo');
         this.state = { //定义组件状态
-            todos: this.db.get('todos') || [],
-            isAllChecked: false
+            todos: this.db.get('todos') || []
         };
     }
 
     // 判断是否所有任务的状态都完成，同步底部的全选框
-    allChecked() {
+    /*allChecked() {
         let isAllChecked = false;
         if (this.state.todos.every(todo => todo.isDone)) {
             isAllChecked = true;
@@ -33,16 +32,17 @@ class App extends React.Component { //定义组件，继承父类
         //     isAllChecked = true;
         // }
         this.setState({   //改变状态，组件重绘
-            todos: this.state.todos,
-            isAllChecked: isAllChecked
+            todos: this.state.todos
         });
-    }
+    }*/
 
     // 添加任务，是传递给Header组件的方法
     addTodo(todoItem){
         this.state.todos.push(todoItem);  //todo列表
         this.db.set('todos', this.state.todos);
-        this.allChecked();
+        this.setState({   //改变状态，组件重绘
+            todos: this.state.todos
+        });
     }
 
     // 删除当前的任务，传递给TodoItem的方法
@@ -58,11 +58,10 @@ class App extends React.Component { //定义组件，继承父类
         // var todos = arr.filter(function(todo) {
         //     return !todo.isDone;
         // });
-        this.setState({
-            todos: todos,
-            isAllChecked: false
-        });
         this.db.set('todos', todos);
+        this.setState({
+            todos: todos
+        });
     }
 
     // 改变任务状态，传递给TodoItem和Footer组件的方法
@@ -72,20 +71,22 @@ class App extends React.Component { //定义组件，继承父类
                 todos: this.state.todos.map((todo) => {
                     todo.isDone = isDone;
                     return todo;
-                }),
-                isAllChecked: isDone
+                })
             });
         }else{   //操作其中一个todo
             this.state.todos[index].isDone = isDone;
-            this.allChecked();
+           
         }
-        this.db.set('todos', this.state.todos);
+        this.db.set('todos', this.state.todos); 
+        this.setState({   //改变状态，组件重绘
+                todos: this.state.todos
+            });
     }
 
     //组件渲染方法
     render() {
         let info = {
-            isAllChecked: this.state.isAllChecked,
+            isAllChecked: this.state.todos.length ==0?false:(this.state.todos.filter((todo) => todo.isDone).length==this.state.todos.length),
             todoCount: this.state.todos.length || 0,
             todoDoneCount: (this.state.todos && this.state.todos.filter((todo) => todo.isDone)).length || 0
         };

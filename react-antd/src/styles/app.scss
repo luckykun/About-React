@@ -1,0 +1,107 @@
+html, body, div, h5, h6, p, ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+
+#app {
+    /* 左侧导航固定宽度 */
+    #leftMenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: #333;
+        width: 200px;
+        box-sizing: border-box;
+    }
+
+    /* logo样式 */
+    #logo {
+        display: block;
+        margin: 20px auto;
+        transition:all 1s;
+    }
+    #logo:hover {
+        transform: rotate(360deg);
+    }
+
+
+    /* 右侧宽度自适应 */
+    #rightWrap {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 20px 20px 0 20px;
+        position: absolute;
+        top: 0;
+        left: 200px;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto;
+    }
+
+    .right-box {
+        box-sizing: border-box;
+        padding: 20px 20px 0;
+        position: absolute;
+        top: 73px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow-y: auto;
+    }
+
+    #rightWrap .ant-menu-submenu {
+        float: right;
+    }
+
+    .chart-box {
+        margin-top: 30px;
+    }
+
+    .ege {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .ege a {
+        color: #009688;
+        font-size: 16px;
+    }
+
+    .lastPic {
+        display: block;
+        margin: 16% auto 0;
+    }
+
+    .ani-box {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .doclist {
+        line-height: 40px;
+    }
+
+    .progress-wrap {
+        width: 600px;
+        margin: 0 auto;
+        .ant-progress-line {
+            margin: 10px 0;
+        }
+        .ant-progress-circle {
+            margin: 60px 30px;
+        }
+    }
+
+    .carousel-wrap {
+        width: 350px;
+        height: 220px;
+        margin: 0 auto;
+        img {
+            width: 350px;
+            height: 220px;
+        }
+    }
+
+}

@@ -1,0 +1,146 @@
+/**
+ * Created by yikun on 16/05/04.
+ */
+
+body {
+    background: #fff;
+}
+header {
+    text-align: center;
+}
+
+header .todo-title {
+    font-weight: bold;
+}
+
+.text-success {
+    color: #090;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2),0 1px 2px rgba(0,0,0,0.05);
+    border-radius: 4px;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #da4f49;
+    border: 1px solid #bd362f;
+}
+.btn-danger:hover {
+    color: #fff;
+    background-color: #bd362f;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+.container {
+    width: 600px;
+    margin: 0 auto;
+
+    .todo-wrap {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+
+        .todo-header{
+            input {
+                width: 560px;
+                height: 28px;
+                font-size: 14px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                padding: 4px 7px;
+            }
+            input:focus {
+                outline: none;
+                border-color: rgba(82,168,236,0.8);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(82,168,236,0.6);
+            }
+        }
+
+        .todo-main {
+
+            margin-left: 0px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            padding: 0px;
+
+            li {
+                list-style: none;
+                height: 36px;
+                line-height: 36px;
+                padding: 0 5px;
+                border-bottom: 1px solid #ddd;
+                label {
+                    float: left;
+                    cursor: pointer;
+                    input {
+                        vertical-align: middle;
+                        margin-right: 6px;
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+                button {
+                    float: right;
+                    display: none;
+                    margin-top: 3px;
+                }
+            }
+            li:before {
+                content: initial;
+            }
+            li:last-child {
+                border-bottom: none;
+            }
+
+        }
+
+        .todo-empty {
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #ddd;
+            border-radius: 2px;
+            padding-left: 5px;
+            margin-top: 10px;
+        }
+
+        .todo-footer {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 6px;
+            margin-top: 5px;
+            label {
+                display: inline-block;
+                margin-right: 20px;
+                cursor: pointer;
+                input {
+                    position: relative;
+                    top: -1px;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+            }
+            button {
+                float: right;
+                margin-top: 5px;
+            }
+        }
+
+    }
+}

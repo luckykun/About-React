@@ -1,0 +1,154 @@
+.ant-mention-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+}
+.ant-mention-wrapper.active .ant-mention-editor {
+  border-color: #57c5f7;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+}
+.ant-mention-wrapper .ant-mention-editor {
+  position: relative;
+  display: inline-block;
+  padding: 4px 7px;
+  width: 100%;
+  height: 28px;
+  cursor: text;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #666;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  -webkit-transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: border 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), background 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), box-shadow 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0;
+  display: block;
+}
+.ant-mention-wrapper .ant-mention-editor::-moz-placeholder {
+  color: #ccc;
+  opacity: 1;
+}
+.ant-mention-wrapper .ant-mention-editor:-ms-input-placeholder {
+  color: #ccc;
+}
+.ant-mention-wrapper .ant-mention-editor::-webkit-input-placeholder {
+  color: #ccc;
+}
+.ant-mention-wrapper .ant-mention-editor:hover {
+  border-color: #57c5f7;
+}
+.ant-mention-wrapper .ant-mention-editor:focus {
+  border-color: #57c5f7;
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(45, 183, 245, 0.2);
+}
+.ant-mention-wrapper .ant-mention-editor[disabled] {
+  background-color: #f7f7f7;
+  opacity: 1;
+  cursor: not-allowed;
+  color: #ccc;
+}
+.ant-mention-wrapper .ant-mention-editor[disabled]:hover {
+  border-color: #e1e1e1;
+}
+textarea.ant-mention-wrapper .ant-mention-editor {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.ant-mention-wrapper .ant-mention-editor-lg {
+  padding: 6px 7px;
+  height: 32px;
+}
+.ant-mention-wrapper .ant-mention-editor-sm {
+  padding: 1px 7px;
+  height: 22px;
+  border-radius: 4px;
+}
+.ant-mention-wrapper .ant-mention-editor-wrapper {
+  overflow-y: auto;
+  height: auto;
+}
+.ant-mention-wrapper .public-DraftEditorPlaceholder-root {
+  position: absolute;
+}
+.ant-mention-wrapper .public-DraftEditorPlaceholder-root .public-DraftEditorPlaceholder-inner {
+  color: #ccc;
+  opacity: 1;
+  outline: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: auto;
+  padding: 4px 7px;
+}
+.ant-mention-wrapper .DraftEditor-editorContainer .public-DraftEditor-content {
+  height: auto;
+  padding: 4px 7px;
+}
+.ant-mention-wrapper .ant-mention-dropdown {
+  margin-top: 1.5em;
+  max-height: 250px;
+  min-width: 120px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  box-sizing: border-box;
+  z-index: 1050;
+  left: -9999px;
+  top: -9999px;
+  position: absolute;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-size: 12px;
+}
+.ant-mention-wrapper .ant-mention-dropdown-notfound.ant-mention-dropdown-item {
+  color: #ccc;
+}
+.ant-mention-wrapper .ant-mention-dropdown-notfound.ant-mention-dropdown-item .anticon-loading {
+  color: #2db7f5;
+}
+.ant-mention-wrapper .ant-mention-dropdown-item {
+  position: relative;
+  display: block;
+  padding: 7px 16px;
+  font-weight: normal;
+  color: #666;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+}
+.ant-mention-wrapper .ant-mention-dropdown-item:hover,
+.ant-mention-wrapper .ant-mention-dropdown-item.focus,
+.ant-mention-wrapper .ant-mention-dropdown-item-active {
+  background-color: #eaf8fe;
+}
+.ant-mention-wrapper .ant-mention-dropdown-item-disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+.ant-mention-wrapper .ant-mention-dropdown-item-disabled:hover {
+  color: #ccc;
+  background-color: #fff;
+  cursor: not-allowed;
+}
+.ant-mention-wrapper .ant-mention-dropdown-item-selected,
+.ant-mention-wrapper .ant-mention-dropdown-item-selected:hover {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  color: #666;
+}
+.ant-mention-wrapper .ant-mention-dropdown-item-divider {
+  height: 1px;
+  margin: 1px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  line-height: 0;
+}

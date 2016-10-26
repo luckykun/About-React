@@ -1,0 +1,6 @@
+.resizable-image {
+  border: 1px solid transparent;
+}
+.resizable-image.focus {
+  border: 1px solid blue;
+}

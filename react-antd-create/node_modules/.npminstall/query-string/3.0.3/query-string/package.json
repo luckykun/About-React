@@ -1,0 +1,45 @@
+{
+  "name": "query-string",
+  "version": "3.0.3",
+  "description": "Parse and stringify URL query strings",
+  "license": "MIT",
+  "repository": "sindresorhus/query-string",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "browser",
+    "querystring",
+    "query",
+    "string",
+    "qs",
+    "param",
+    "parameter",
+    "url",
+    "uri",
+    "parse",
+    "stringify",
+    "encode",
+    "decode"
+  ],
+  "dependencies": {
+    "strict-uri-encode": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  },
+  "_from": "query-string@3.0.3",
+  "_resolved": "http://registry.npm.taobao.org/query-string/download/query-string-3.0.3.tgz"
+}

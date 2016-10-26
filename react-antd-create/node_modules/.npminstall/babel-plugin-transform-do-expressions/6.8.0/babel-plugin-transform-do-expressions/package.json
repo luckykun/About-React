@@ -1,0 +1,20 @@
+{
+  "name": "babel-plugin-transform-do-expressions",
+  "version": "6.8.0",
+  "description": "Compile do expressions to ES5",
+  "repository": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-do-expressions",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "dependencies": {
+    "babel-plugin-syntax-do-expressions": "^6.8.0",
+    "babel-runtime": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-helper-plugin-test-runner": "^6.8.0"
+  },
+  "_from": "babel-plugin-transform-do-expressions@6.8.0",
+  "_resolved": "http://registry.npm.taobao.org/babel-plugin-transform-do-expressions/download/babel-plugin-transform-do-expressions-6.8.0.tgz"
+}

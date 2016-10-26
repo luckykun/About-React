@@ -1,0 +1,15 @@
+{
+  "name": "babel-plugin-syntax-function-bind",
+  "version": "6.13.0",
+  "description": "Allow parsing of function bind",
+  "repository": "https://github.com/babel/babel/tree/master/packages/babel-plugin-syntax-function-bind",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "_from": "babel-plugin-syntax-function-bind@6.13.0",
+  "_resolved": "http://registry.npm.taobao.org/babel-plugin-syntax-function-bind/download/babel-plugin-syntax-function-bind-6.13.0.tgz"
+}

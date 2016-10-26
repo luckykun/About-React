@@ -1,0 +1,42 @@
+.ant-message {
+  font-size: 12px;
+  position: fixed;
+  z-index: 1010;
+  width: 100%;
+  top: 16px;
+  left: 0;
+}
+.ant-message-notice {
+  width: auto;
+  vertical-align: middle;
+  position: absolute;
+  left: 50%;
+}
+.ant-message-notice-content {
+  position: relative;
+  right: 50%;
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  display: block;
+}
+.ant-message-success .anticon {
+  color: #87d068;
+}
+.ant-message-error .anticon {
+  color: #f50;
+}
+.ant-message-warning .anticon {
+  color: #fa0;
+}
+.ant-message-info .anticon,
+.ant-message-loading .anticon {
+  color: #2db7f5;
+}
+.ant-message .anticon {
+  margin-right: 8px;
+  font-size: 14px;
+  top: 1px;
+  position: relative;
+}

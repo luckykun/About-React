@@ -1,0 +1,5 @@
+.anticon-spin {
+  display: inline-block;
+  -webkit-animation: loadingCircle 1.6s infinite linear;
+          animation: loadingCircle 1.6s infinite linear;
+}

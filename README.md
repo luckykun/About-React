@@ -10,6 +10,6 @@
 
 基于react和antd的一个空的独立项目的模版。
 
-## [/react-todo-demo](https://github.com/luckykun/About-React/tree/master/react-antd-demo)
+## [/react-todo-demo](https://github.com/luckykun/About-React/tree/master/react-todo-demo)
 
 基于react做的todo-list的demo。

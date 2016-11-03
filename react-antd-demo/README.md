@@ -2,6 +2,12 @@
 
 
 ----------
+
+## 项目截图
+
+![](https://img.alicdn.com/tps/TB10sZlNVXXXXclXpXXXXXXXXXX-1425-673.gif)
+
+
 ## 使用方法
 
 开发模式，启动本地服务。修改文件，自动编译（`不会打包输出到build文件夹，知识保存在内存`），浏览器自动刷新。

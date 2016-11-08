@@ -1,5 +1,7 @@
 # 使用说明
 
+由于此项目依赖于操作localstorage的模块localDb，线上找不到文件，所以我将整个node_modules都上传了。
+
 ## 项目截图
 ![](https://img.alicdn.com/tps/TB1gU0MOXXXXXc1aFXXXXXXXXXX-1051-548.gif)
 
